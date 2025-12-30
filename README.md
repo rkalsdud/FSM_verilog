@@ -14,7 +14,7 @@
 case 문을 사용해서 state diagram에 나타난 FSM의 동작을 구현
 
 ### 구현 2 (shift register)
-shift register를 응용해서 sequence detector를 구현할 수도 있다. 
+SIPO 형식의 shift register를 응용해서 sequence detector를 구현할 수도 있다. 
 
 - 변수의 의미  
   - input   
