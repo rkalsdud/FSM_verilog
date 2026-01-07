@@ -7,7 +7,7 @@ module mealyShiftReg(
 );
 
 always @(posedge clk or negedge reset) begin
-    if (!reset) Q<=5'b00000;
+    if (!reset) Q<=4'b0000;
     else Q<={Q[3:0], x};
 end
 
