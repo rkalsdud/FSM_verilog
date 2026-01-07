@@ -4,13 +4,11 @@ input x, clk, reset,
 output reg [2:0] state,
 output z
 );
-
-reg flag;    
+   
 reg [2:0] nextState;    
 localparam S0=3'b000, S1=3'b001, S2=3'b010, S3=3'b011, S4=3'b100;
 
 always @(*) begin
-    flag=1'b0;
     case (state)
         S0: nextState=x ? S1:S0;
         S1: nextState=x ? S1:S2;
